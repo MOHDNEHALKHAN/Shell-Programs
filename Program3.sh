@@ -1,4 +1,4 @@
-#Program3 - Write a shell script to swap two numbers.
+#Program3 - Write a shell script to swap two numbers without using a third variable.
 
 first=5
 second=10
