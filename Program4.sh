@@ -2,7 +2,7 @@
 
 a=30
 b=20
-if [ "$a" == "$b" ]
+if [ "$a" -eq "$b" ]
 then
 echo "a is equal to b"
 else
