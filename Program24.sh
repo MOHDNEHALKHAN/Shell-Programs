@@ -1,17 +1,13 @@
-# Function to find the greatest number
-find_greatest() {
-    if [ $1 -ge $2 ] && [ $1 -ge $3 ]; then
-        echo $1
-    elif [ $2 -ge $1 ] && [ $2 -ge $3 ]; then
-        echo $2
-    else
-        echo $3
-    fi
-}
-
-# Read three numbers in one go
+# Read three numbers
 read num1 num2 num3
 
-# Find and print the greatest number
-greatest=$(find_greatest $num1 $num2 $num3)
-echo $greatest
+# Check if num1 is greater than or equal to num2 and num3
+if [ $num1 -ge $num2 ] && [ $num1 -ge $num3 ]; then
+    echo $num1
+# Check if num2 is greater than or equal to num1 and num3
+elif [ $num2 -ge $num1 ] && [ $num2 -ge $num3 ]; then
+    echo $num2
+# If none of the above conditions are true, num3 is the greatest
+else
+    echo $num3
+fi
