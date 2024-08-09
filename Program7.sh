@@ -1,11 +1,12 @@
+# Check if the number is positive, negative, or neither.
 echo "enter any Number"
 read n
 if [ "$n" -lt 0 ]
 then
-echo "Its negative!"
+echo "It's negative!"
 elif [ "$n" -eq 0 ]
 then
-echo "Its neither positive nor negative"
+echo "It's neither positive nor negative"
 else
-echo "Its positive"
+echo "It's positive"
 fi
