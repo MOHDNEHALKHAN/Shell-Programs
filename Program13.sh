@@ -1,11 +1,12 @@
-#program13 : Factorial of a number
+#program13: Factorial of a number
 
-echo "Enter a number"
-read num
-fact=1
-while [ $num -gt 1 ]
+read number
+
+factorial=1
+
+for (( i=1; i<=number; i++ ))
 do
-fact=$((fact * num))
-num=$((num - 1))
+    factorial=$((factorial * i))
 done
-echo $fact
+
+echo "$factorial"
